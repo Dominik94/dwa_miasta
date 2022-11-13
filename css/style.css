@@ -1,0 +1,390 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+}
+
+a {
+	color: #cbb27c;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ba9a56;
+	text-decoration: none;
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #d1af65;
+	font-size: 2.6rem;
+}
+
+h2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 3.4rem;
+	font-weight: 700;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.navbar {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0);
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+
+.navbar-shadow {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 90px;
+	animation: navbar-animation 1s ease-in-out;
+	padding: 0;
+}
+
+.navbar-shadow .logo {
+	height: 100px;
+}
+
+.navbar-shadow .nav-item {
+	padding: 0 1em;
+}
+
+@keyframes navbar-animation {
+	0% {
+		transform: translateY(-100px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.logo img {
+	width: 80%;
+	height: 80%;
+	margin-left: 1em;
+	padding: 0;
+}
+
+.nav-items {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-item {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	justify-content: space-around;
+	padding: 0 2rem;
+	font-size: 1.6rem;
+	letter-spacing: 0.1em;
+	font-weight: 600;
+	transition: color 0.3s;
+}
+
+.nav-item:hover {
+	color: #d1af65;
+}
+
+.active {
+	color: #d1af65;
+}
+
+header {
+	position: relative;
+	background-image: url('/img/mapa-lublina.jpg');
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	z-index: 1;
+}
+
+.info h1 {
+	font-size: 3.4rem;
+	color: #d1af65;
+	font-weight: normal;
+}
+
+.info h2 {
+	font-size: 5.4rem;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	font-weight: 800;
+}
+
+.btn {
+	padding: 1em 2em;
+	color: #333;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #d1af65;
+}
+
+.aboutus-btn:hover {
+	color: #fff;
+}
+
+.aboutus {
+	background-color: #fff;
+	padding: 4em;
+}
+
+.aboutus h1 {
+	padding: 1em;
+}
+
+.aboutus-info {
+	display: flex;
+	flex-direction: row;
+	padding-top: 1em;
+}
+
+.aboutus-text {
+	display: flex;
+	flex-direction: column;
+	max-width: 60%;
+	padding-right: 1em;
+}
+
+.aboutus-img {
+	position: relative;
+	width: 50%;
+}
+
+.aboutus-img img {
+	max-width: 100%;
+}
+
+.our-products-btn {
+	display: flex;
+	padding: 2em;
+	justify-content: center;
+	align-items: center;
+}
+
+.products {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #1b1d1e;
+	padding: 4em;
+}
+
+.products h1 {
+	padding: 1em;
+}
+
+.products h2 {
+	color: #fff;
+}
+
+.products-text {
+	color: #fff;
+	padding: 1em;
+}
+
+.products-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.product {
+	display: flex;
+	flex-direction: column;
+	margin: 1em 2em;
+	max-width: 25%;
+}
+
+.product img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 400px;
+}
+
+.product h3 {
+	color: #fff;
+	text-align: center;
+	font-size: 2rem;
+	padding: 1em;
+	text-transform: uppercase;
+}
+
+.product h4 {
+	color: #d1af65;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.cooperation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 4em;
+}
+
+.cooperation p {
+	padding-top: 2em;
+}
+
+footer {
+	background-color: #1b1d1e;
+}
+
+.contact {
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+}
+
+.contact-box {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+}
+
+.contacts {
+	display: flex;
+	flex-direction: column;
+	padding: 1em 3em;
+}
+
+.contacts p {
+	padding: 0.8em 0;
+}
+
+.contacts i {
+	color: rgba(255, 255, 255, 0.3);
+	padding: 0 1em;
+}
+
+.copyright {
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	text-align: center;
+	padding: 2em;
+	color: #fff;
+}
+
+.media {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-weight: bold;
+}
+
+.media p {
+	font-size: 2rem;
+}
+
+.links {
+	font-size: 5rem;
+}
+
+.contact-us {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 2em;
+}
+
+.contact-us p {
+	padding-bottom: 0.5em;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.map-box {
+	height: 500px;
+	width: 60%;
+}
+
+.map {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2em 0;
+	width: 100%;
+	height: 100%;
+}
+
+.popup-form {
+	display: none;
+	position: fixed;
+	z-index: 10;
+	padding-top: 20%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contact-form {
+	margin: auto;
+	padding: auto;
+	width: 50%;
+	padding: 1em;
+	background-color: #fff;
+	justify-content: center;
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	padding: 2em;
+}
+
+.active {
+	display: block;
+}
